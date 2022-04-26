@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2ECF4"
+    tools:context=".activity.user.ReloadEwalletActivity">
+
+    <RelativeLayout
+        android:id="@+id/topbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shape_text_rect_blue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Reload"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/ic_arrow_back_white" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/eWalletBalanceRl"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/topbarRl"
+        android:background="@drawable/ewallet_background"
+
+        >
+
+        <TextView
+            android:id="@+id/ewalletTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Account Balance"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/eWalletBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ewalletTv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="RM32.50"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/reloadBtn"-->
+        <!--            android:layout_width="90dp"-->
+        <!--            android:layout_height="30dp"-->
+        <!--            android:layout_below="@id/eWalletBalance"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:background="@drawable/shape_rect04_btn"-->
+        <!--            android:text="RELOAD"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="11sp"-->
+
+        <!--            />-->
+    </RelativeLayout>
+
+    <!--Tabs: Product, Orders-->
+    <LinearLayout
+        android:id="@+id/paymentLl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/eWalletBalanceRl"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/shape_rect_top_bar_white_no_outline"
+        android:orientation="horizontal"
+        android:padding="1dp">
+        <!--Products-->
+        <TextView
+            android:id="@+id/cardTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_card_grey"
+            android:gravity="center"
+            android:text="Debit/Credit Card"
+            android:textColor="#516677" />
+
+        <TextView
+            android:id="@+id/bankingTv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:drawableTop="@drawable/ic_bank_grey"
+            android:text="Online Banking"
+            android:textColor="#516677"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/selectAmount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_rect_top_bar_grey"
+        android:layout_below="@id/paymentLl"
+        android:text="  Select your Amount"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/topupValueRv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/selectAmount"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/row_topup_value" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/topupEt"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_below="@+id/topupValueRv"-->
+
+
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/topupBtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/topupEt"-->
+<!--        android:text="top up"-->
+<!--        />-->
+
+
+
+
+
+
+
+</RelativeLayout>

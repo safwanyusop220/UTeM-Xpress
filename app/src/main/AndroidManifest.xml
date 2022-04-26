@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="my.edu.utem.ftmk.utemxpress"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label=""
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UTeMxpress"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label">
+        <activity
+            android:name=".activity.authentication.TestCreditCardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.user.ReloadEwalletActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.user.SelectedCategoryProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.authentication.SettingsActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".activity.seller.OrderDetailsSellerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.user.OrderDetailsUsersActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.seller.ProfileEditSellerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.user.ProfileEditUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.seller.EditProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.user.GroceriesUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.user.BrowseAllGroceriesActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.user.HomePageActivity"
+            android:exported="true"
+            android:windowSoftInputMode="stateHidden"
+            /> <!-- hide keyboard by default -->
+        <activity
+            android:name=".activity.seller.AddProductActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.user.MainUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.seller.MainSellerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.authentication.ForgotPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.user.RegisterUserActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.seller.RegisterSellerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.authentication.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.authentication.CreditCardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.authentication.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <service android:name=".activity.authentication.MyFireBaseMessaging"
+            android:enabled="true"
+            android:exported="false"
+            >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT" />-->
+            </intent-filter>
+        </service>
+
+<!--        <service-->
+<!--            android:name=".MyFirebaseInstanceIDService">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+<!--        <service-->
+<!--            android:name=".MyFirebaseMessagingService">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.google.firebase.MESSAGING_EVENT"/>-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+    </application>
+
+</manifest>

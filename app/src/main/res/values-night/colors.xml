@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="blue">#0C4382</color>
+    <color name="blue01">#5A87C7</color>
+    <color name="blue02_login">#112b7d</color>
+    <color name="purple_700">#112b7d</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#808080</color>
+    <color name="greenTest">#0D6CE3D7</color>
+    <color name="green_oval">#42E148</color>
+    <color name="red">#EC0707</color>
+    <color name="green">#86ED0F</color>
+
+    <!--theme Without actionbar -->
+    <style name = "App">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+</resources>

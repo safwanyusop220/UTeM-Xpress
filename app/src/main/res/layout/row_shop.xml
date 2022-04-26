@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="1dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    app:cardCornerRadius = "20dp"
+    android:layout_marginTop="5dp"
+    app:cardBackgroundColor="#FFFFFF"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/shopIv"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_store_grey" />
+        <TextView
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_circle_bluelogin2"
+                />
+
+
+<!--        online/offline status-->
+        <ImageView
+            android:id="@+id/onlineIv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/shape_circle03" />
+
+        <TextView
+            android:id="@+id/shopClosedTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/nextIv"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:background="@drawable/shape_rect07"
+            android:text="Closed"
+            android:textColor="#FD1100"
+            android:textSize="10sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/nextIv"
+            android:layout_toEndOf="@+id/shopIv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shopNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Shop Name"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/phoneTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Phone"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/addressLl"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                >-->
+            <TextView
+                android:id="@+id/cityTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Location"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+            <!--            <TextView-->
+            <!--                android:id="@+id/streetTv"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:padding="2dp"-->
+            <!--                android:text="Adress"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:textStyle="normal"-->
+            <!--                />-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/unitTv"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:padding="2dp"-->
+            <!--                android:text="Adress"-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:textStyle="normal"-->
+            <!--                />-->
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="end"
+                android:numStars="5"
+                android:rating="3.5" />
+
+        </LinearLayout>
+
+
+
+
+<!--        </LinearLayout>-->
+
+
+        <ImageView
+            android:id="@+id/nextIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_next_grey" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

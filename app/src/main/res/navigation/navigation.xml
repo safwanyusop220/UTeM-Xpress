@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home">
+
+    <activity
+        android:id="@+id/home"
+        android:name="my.edu.utem.ftmk.utemxpress.activity.user.HomePageActivity"
+        android:label="activity_grocery_list"
+        tools:layout="@layout/activity_main_user" />
+    <activity
+        android:id="@+id/search"
+        android:name="my.edu.utem.ftmk.utemxpress.activity.user.SearchGroceriesActivity"
+        android:label="activity_search_groceries"
+        tools:layout="@layout/activity_search_groceries" />
+    <activity
+        android:id="@+id/eWallet"
+        android:name="my.edu.utem.ftmk.utemxpress.activity.user.EWalletActivity"
+        android:label="activity_ewallet"
+        tools:layout="@layout/activity_ewallet" />
+    <activity
+        android:id="@+id/order"
+        android:name="my.edu.utem.ftmk.utemxpress.activity.user.OrderHistoryActivity"
+        android:label="activity_order_history"
+        tools:layout="@layout/activity_order_history" />
+    <activity
+        android:id="@+id/basket"
+        android:name="my.edu.utem.ftmk.utemxpress.activity.user.CheckoutBasketActivity"
+        android:label="activity_checkout_basket"
+        tools:layout="@layout/activity_checkout_basket" />
+</navigation>

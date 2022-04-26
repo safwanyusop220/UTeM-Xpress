@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:icon="@drawable/ic_shop_grey"
+        android:title="Shops"
+        />
+    <item android:id="@+id/search"
+        android:icon="@drawable/ic_search_grey"
+        android:title="search"
+        />
+
+    <item android:id="@+id/eWallet"
+        android:icon="@drawable/ic_wallet_grey"
+        android:title="E-Wallet"
+        />
+
+    <item android:id="@+id/order"
+        android:icon="@drawable/ic_order_grey"
+        android:title="Orders"
+        />
+    <item android:id="@+id/basket"
+        android:icon="@drawable/ic_basket_grey"
+        android:title="Basket"
+        />
+
+
+
+</menu>
